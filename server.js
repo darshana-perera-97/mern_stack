@@ -18,3 +18,8 @@ const port = 3001;
 //delete route
 
 //update route
+
+
+app.listern(port,function(){
+  console.log("Express is running");
+})
