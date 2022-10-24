@@ -6,7 +6,7 @@ const port = 3001;
 
 //connect mongodb
 mongoose.connect(
-  "mongodb+srv://darshana:darshana@cluster0.uoooe.mongodb.net/?retryWrites=true&w=majority"
+  "mongodb+srv://darshana:darshana@cluster0.uoooe.mongodb.net/dsitems?retryWrites=true&w=majority"
 );
 
 //data schemas
