@@ -10,6 +10,10 @@ mongoose.connect(
 );
 
 //data schemas
+const itemSchema = {
+  title: String,
+  description: String,
+};
 
 //data models
 
