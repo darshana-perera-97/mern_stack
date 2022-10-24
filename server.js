@@ -26,6 +26,16 @@ app.get("/items", (req, res) => {
 });
 
 // create route
+app.post("/newItem", (req, res) => {
+  const newItem = new Item({
+    title: req.body.title,
+    desc: req.body.description,
+  });
+  newItem
+    .save()
+    .then((item) => console.log(item))
+    .catch((err) => res.status(400).json("Error : " + err));
+});
 
 //delete route
 
