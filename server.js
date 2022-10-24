@@ -5,6 +5,9 @@ const mongoose = require("mongoose");
 const port = 3001;
 
 //connect mongodb
+mongoose.connect(
+  "mongodb+srv://darshana:darshana@cluster0.uoooe.mongodb.net/?retryWrites=true&w=majority"
+);
 
 //data schemas
 
@@ -18,7 +21,6 @@ const port = 3001;
 
 //update route
 
-
-app.listern(port,function(){
+app.listen(port, function () {
   console.log("Express is running");
-})
+});
