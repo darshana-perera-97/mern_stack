@@ -21,11 +21,12 @@ export default function Input() {
       />
       <button
         onClick={() => {
-          console.log(name + "+" + des);
+        //   console.log(name + "+" + des);
           const newItem = {
             title: name,
             description: des,
           };
+          axios.post("/newItem", newItem);
         }}
       >
         Save
